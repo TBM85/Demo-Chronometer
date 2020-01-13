@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@media (max-width: 575px) {
+  .chronometer-container {
+    width: 90%;
+    margin: 0.25em;
+  }
+  .chronometer {
+    font-size: 3.5em;
+  }
+}
+@media (min-width: 576px) {
+  .chronometer-container {
+    margin: 0.25em;
+    width: 100%;
+  }
+  .chronometer {
+    font-size: 5em;
+  }
+}
+
+body {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.chronometer-container {
+  border: 1px solid gainsboro;
+  border-radius: 0.25em;
+  padding: 2em;
+  box-shadow: 0px 0px 5px 1px #ccc;
+  justify-content: center;
+  margin: auto;
+}
+h2 {
+  text-transform: uppercase;
+  color: cornflowerblue;
+}
+.chronometer {
+  margin: 1em 0;
+}
+button {
+  margin: 0.5em;
+}
+button:hover,
+button:active, 
+button:focus {
+  background-color: cornflowerblue !important;
+}
