@@ -5,5 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'demo-chronometer';
+  chronometer = '00:00:00';
+
+  onIntervalIssued(issuedNumber: string) {
+    this.chronometer = issuedNumber;
+  }
 }

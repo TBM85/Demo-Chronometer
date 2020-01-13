@@ -1,1 +1,7 @@
-<app-chronometer></app-chronometer>
+<div class="container chronometer-container">
+  <h2 class="d-flex justify-content-center">Chronometer</h2>
+  <div class="chronometer d-flex justify-content-center">
+    <p>{{ chronometer }}</p>
+  </div>
+  <app-chronometer (intervalIssued)= "onIntervalIssued($event)"></app-chronometer>
+</div>
